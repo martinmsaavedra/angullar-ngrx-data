@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.card {
+  width: auto;
+  border-radius: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: .2rem;
+}
+
+.profile-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5rem;
+  margin-top: 1rem;
+}
+
+.card-body{
+  text-align: center;
+  display: flex;
+  height:max-content;
+}
+
+.speeddial-mask {
+    position: absolute;
+    bottom: 175px;
+    right: 100px;
+}
+
+.editButton{
+  position:absolute;
+   bottom:5%;
+   left:35%
+}
+
+.userName{
+  height: 10rem;
+  overflow:auto;
+  resize:none;
+}

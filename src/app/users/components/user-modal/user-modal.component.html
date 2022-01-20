@@ -1,0 +1,52 @@
+<div class="mb-3">
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit($event)">
+    <input
+      pInputText
+      class="p-inputtext-lg"
+      id="first_name"
+      type="text"
+      formControlName="first_name"
+      placeholder="First Name"
+    />
+
+    <input
+      pInputText
+      class="p-inputtext-lg"
+      id="last_name"
+      type="text"
+      formControlName="last_name"
+      placeholder="Last Name"
+    />
+
+    <input
+      pInputText
+      class="p-inputtext-lg"
+      id="email"
+      type="text"
+      formControlName="email"
+      placeholder="Email"
+    />
+    <div class="mb-3">
+      <button
+        pButton
+        pRipple
+        type="submit"
+        label="Save"
+        value="save"
+        class="p-button-raised"
+        [disabled]="!profileForm.valid"
+
+      ></button
+      >&nbsp;
+      <button
+        pButton
+        pRipple
+        type="submit"
+        label="Delete"
+        value="delete"
+        class="p-button-raised p-button-danger"
+        [disabled]="!profileForm.valid"
+      ></button>
+    </div>
+  </form>
+</div>
